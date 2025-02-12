@@ -1,11 +1,14 @@
-import UseRoutes from './router'
+
+import { RouterProvider } from 'react-router-dom'
+import router from './router'
+import './App.css'
 function App() {
 
 
   return (
-    <div className='App'>
-      <UseRoutes />
-    </div>
+     <div className='app'>
+        <RouterProvider router={router} />
+      </div>
   )
 }
 

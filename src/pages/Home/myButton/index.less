@@ -1,0 +1,33 @@
+.btn{
+  width: 190px;
+  height: 50px;
+  cursor: pointer;
+  background-color: #ffffff;
+  border-radius: 15px;
+  // border: 1px solid #7fffd4;
+  border: 1px solid #A1E7FE   ;
+  color: #A1E7FE   ;
+  font-weight: bold;
+  font-size: 20px;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+.btn::before{
+  content: '';
+  width: 0;
+  height: 100%;
+  position: absolute;
+  left: -30px;
+  top: 0;
+  background-color: #A1E7FE   ;
+  transform: skew(45deg);
+  transition: all 0.5s;
+  opacity: 0.2;
+}
+
+.btn:hover::before{
+  width: 180%;
+  color: #ffffff;
+}

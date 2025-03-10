@@ -83,9 +83,9 @@ export default function MyBody(){
           <Input placeholder="Search Doctor" prefix={<SearchOutlined />} style={{border: 'none',borderRadius: '10px'}}/>
         </div>
         <div className='clock' id='clockcontainer'></div>
-        <div className='time' style={wrapperStyle}>
+        {/* <div className='time' style={wrapperStyle}>
           <Calendar fullscreen={false} onPanelChange={onPanelChange} />
-        </div>
+        </div> */}
       </div>
     </div>
   )

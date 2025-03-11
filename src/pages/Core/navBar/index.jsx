@@ -1,6 +1,6 @@
 
 import { useNavigate } from 'react-router-dom'
-import { HomeOutlined, ShopOutlined, MailOutlined, NotificationOutlined, ReadOutlined, RightCircleOutlined } from '@ant-design/icons'
+import { HomeOutlined, PhoneOutlined, RadarChartOutlined, PieChartOutlined, RightCircleOutlined } from '@ant-design/icons'
 import './index.less'
 
 export default function NavBar(){
@@ -14,22 +14,22 @@ export default function NavBar(){
       <div className='navbox'>
           <div className='itembox' onClick={()=>navigate('/core')}>
           <div className='item'>
-          <ShopOutlined /> &nbsp;&nbsp;&nbsp;模型首页
+          <HomeOutlined /> &nbsp;&nbsp;&nbsp;首页
           </div>
         </div>
         <div className='itembox' onClick={()=>navigate('/core/predicate')}>
           <div className='item'>
-          <NotificationOutlined /> &nbsp;&nbsp;&nbsp;模型预测
+          <RadarChartOutlined /> &nbsp;&nbsp;&nbsp;模型预测
           </div>
         </div>
         <div className='itembox' onClick={()=>navigate('/core/pdfexport')}>
           <div className='item'>
-          <MailOutlined /> &nbsp;&nbsp;&nbsp;模型导出
+          <PhoneOutlined /> &nbsp;&nbsp;&nbsp;在线咨询
           </div>
         </div>
         <div className='itembox' onClick={()=>navigate('/core/screen')}>
           <div className='item'>
-          <ReadOutlined /> &nbsp;&nbsp;&nbsp;模型大屏
+          <PieChartOutlined /> &nbsp;&nbsp;&nbsp;可视化大屏
           </div>
         </div>
       </div>

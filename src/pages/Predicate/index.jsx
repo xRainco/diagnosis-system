@@ -8,30 +8,30 @@ import { Upload, Image, Button, Steps, Descriptions } from "antd"
 export default function Predicate(){
   const items = [
     {
-      key: '1',
-      label: 'UserName',
-      children: 'Zhou Maomao',
+      key: 'name',
+      label: '姓名',
+      children: '王XX',
     },
     {
-      key: '2',
-      label: 'Telephone',
-      children: '1810000000',
+      key: 'sex',
+      label: '性别',
+      children: '女',
     },
     {
-      key: '3',
-      label: 'Live',
-      children: 'Hangzhou, Zhejiang',
+      key: 'age',
+      label: '年龄',
+      children: '23',
     },
     {
-      key: '4',
-      label: 'Remark',
-      children: 'empty',
+      key: 'result',
+      label: '诊断结果',
+      children: '眼疾',
     },
     {
-      key: '5',
-      label: 'Address',
-      children: 'aaaa',
-    },
+      key: 'suggestion',
+      label: '治疗建议',
+      children: '保证睡眠',
+    }
   ];
   const getBase64 = (file) =>
     new Promise((resolve, reject) => {

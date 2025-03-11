@@ -76,7 +76,7 @@
 .image-result-content{
   width: 200px;
   height: 200px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin: 10px auto;
 }
 .predicate-footer{

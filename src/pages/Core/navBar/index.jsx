@@ -1,6 +1,6 @@
 
 import { useNavigate } from 'react-router-dom'
-import { HomeOutlined, PhoneOutlined, RadarChartOutlined, PieChartOutlined, RightCircleOutlined } from '@ant-design/icons'
+import { HomeOutlined, PhoneOutlined, RadarChartOutlined, PieChartOutlined, RightCircleOutlined,UnorderedListOutlined } from '@ant-design/icons'
 import './index.less'
 
 export default function NavBar(){
@@ -8,7 +8,7 @@ export default function NavBar(){
   return (
     <div className='navbar'>
       <div className='homeicon' onClick={()=> navigate('/')}>
-        <HomeOutlined /> 
+        <RightCircleOutlined /> 
         {/* 医疗系统 */}
       </div>
       <div className='navbox'>
@@ -19,7 +19,7 @@ export default function NavBar(){
         </div>
         <div className='itembox' onClick={()=>navigate('/core/predicate')}>
           <div className='item'>
-          <RadarChartOutlined /> &nbsp;&nbsp;&nbsp;模型预测
+          <RadarChartOutlined /> &nbsp;&nbsp;&nbsp;模型诊断
           </div>
         </div>
         <div className='itembox' onClick={()=>navigate('/core/pdfexport')}>
@@ -33,7 +33,7 @@ export default function NavBar(){
           </div>
         </div>
       </div>
-      <div className='backrow'><RightCircleOutlined /></div>
+      <div className='backrow'><UnorderedListOutlined /></div>
     </div>
   )
 }

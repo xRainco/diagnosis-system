@@ -1,16 +1,97 @@
 
-import './index.css'
+import './index.less'
 import { useState } from 'react'
-import { PlusOutlined, CloudUploadOutlined, CloudTwoTone, LoadingOutlined, CheckCircleTwoTone } from '@ant-design/icons'
-import { Upload, Image, Button, Steps, Descriptions } from "antd"
+import { PlusOutlined, CloudUploadOutlined, CloudTwoTone, LoadingOutlined, CheckCircleTwoTone, PlayCircleTwoTone,PictureTwoTone, AlertTwoTone } from '@ant-design/icons'
+import { Upload, Image, Button, Steps, Descriptions, Table } from "antd"
+
 
   
 export default function Predicate(){
-  const items = [
+  const columns = [
+    {
+      title: '编号',
+      dataIndex: 'name',
+      className: 'predicate-table-th',
+      align: 'center'
+    },
+    {
+      title: '类别',
+      dataIndex: 'age',
+      className: 'predicate-table-th',
+      align: 'center'
+    },
+    {
+      title: '疾病类型',
+      dataIndex: 'address',
+      className: 'predicate-table-th',
+      align: 'center'
+    },
+    {
+      title: '置信度',
+      dataIndex: 'address',
+      className: 'predicate-table-th',
+      align: 'center'
+    },
+  ];
+  const data = [
+    {
+      key: '1',
+      name: 'John Brown',
+      age: 32,
+      address: 'New York No. 1 Lake Park',
+    },
+    {
+      key: '2',
+      name: 'Jim Green',
+      age: 42,
+      address: 'London No. 1 Lake Park',
+    },
+    {
+      key: '3',
+      name: 'Joe Black',
+      age: 32,
+      address: 'Sydney No. 1 Lake Park',
+    },{
+      key: '5',
+      name: 'Jim Green',
+      age: 42,
+      address: 'London No. 1 Lake Park',
+    },
+    {
+      key: '6',
+      name: 'Joe Black',
+      age: 32,
+      address: 'Sydney No. 1 Lake Park',
+    },
+    {
+      key: '5',
+      name: 'Jim Green',
+      age: 42,
+      address: 'London No. 1 Lake Park',
+    },
+    {
+      key: '6',
+      name: 'Joe Black',
+      age: 32,
+      address: 'Sydney No. 1 Lake Park',
+    },{
+      key: '5',
+      name: 'Jim Green',
+      age: 42,
+      address: 'London No. 1 Lake Park',
+    },
+    {
+      key: '6',
+      name: 'Joe Black',
+      age: 32,
+      address: 'Sydney No. 1 Lake Park',
+    },
+  ];
+  const desciptItems = [
     {
       key: 'name',
       label: '姓名',
-      children: '王XX',
+      children: '王张李',
     },
     {
       key: 'sex',
@@ -131,23 +212,63 @@ export default function Predicate(){
           </div>
           <div className='image-result-content'>
               <Descriptions 
-              
               column={1}
-              items={items}
+              items={desciptItems}
               />
           </div>
         </div>
       </div>
       <div className='predicate-footer'>
-        <div className='function-select'>
-          <div className='function-select-button'>
-            <Button color='cyan'variant="solid">
-              <CloudUploadOutlined />开始智能诊断
-            </Button>
-          </div>
-          
+        <div className='result-table-container'>
+            <div className='result-table-title'>诊断结果信息</div>
+            <div className='result-table'>
+              <Table
+              size='small'
+              columns={columns}
+              dataSource={data}
+              scroll={{y:160}}
+              pagination={false}
+              bordered={true}
+              />         
+            </div>
         </div>
-        <div className='echart-dom'></div>
+        <div className='functon-btn'>
+          
+          <div className='btn-left'>
+            <div>
+              <Button color='cyan'variant="outlined">
+              <PictureTwoTone />开始智能识别
+              </Button>
+            </div>
+            <div>
+            <Button color='cyan'variant="outlined">
+              <PlayCircleTwoTone />保存结果数据
+              </Button>
+            </div>
+            <div>
+            <Button color='cyan'variant="outlined">
+              <AlertTwoTone />数据可视化表
+              </Button>
+            </div>
+          </div>
+          <div className='btn-right'>
+            <div>
+            <Button color='cyan'variant="outlined">
+                <CloudUploadOutlined />开始智能诊断
+              </Button>
+            </div>
+            <div>
+            <Button color='cyan'variant="outlined">
+                <CloudUploadOutlined />开始智能诊断
+              </Button>
+            </div>
+            <div>
+            <Button color='cyan'variant="outlined" >
+                <CloudUploadOutlined />开始智能诊断
+              </Button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   )

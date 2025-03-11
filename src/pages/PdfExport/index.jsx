@@ -3,6 +3,6 @@
 
 export default function PdfExport(){
   return(
-    <div>PdfExport</div>
+    <div>预约</div>
   )
 }

@@ -14,6 +14,7 @@
 .title{
   width: 95%;
   height: 80%;
+  color: #63b4b7;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -50,7 +51,7 @@
   align-items: center;
 }
 .image-upload{
-  margin-left: 20px;
+  margin-left: 10px;
 }
 .image-upload .ant-upload-list-item-container{
   width: 300px !important;
@@ -67,6 +68,17 @@
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
   border-radius: 10px;
 }
+.image-result-step{
+  width: 400px;
+  height: 100px;
+  margin: 10px auto;
+}
+.image-result-content{
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+  margin: 10px auto;
+}
 .predicate-footer{
   width: 100%;
   height: 280px;
@@ -82,6 +94,12 @@
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
   border-radius: 10px;
   margin-right: 10px;
+}
+.function-select-button{
+  width: 138px;
+  height: 32px;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 .echart-dom{
   width: 35%;

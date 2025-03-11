@@ -1,12 +1,38 @@
 
 import './index.css'
 import { useState } from 'react'
-import { PlusOutlined } from '@ant-design/icons'
-import { Upload, Image, Button } from "antd"
+import { PlusOutlined, CloudUploadOutlined, CloudTwoTone, LoadingOutlined, CheckCircleTwoTone } from '@ant-design/icons'
+import { Upload, Image, Button, Steps, Descriptions } from "antd"
 
   
 export default function Predicate(){
-
+  const items = [
+    {
+      key: '1',
+      label: 'UserName',
+      children: 'Zhou Maomao',
+    },
+    {
+      key: '2',
+      label: 'Telephone',
+      children: '1810000000',
+    },
+    {
+      key: '3',
+      label: 'Live',
+      children: 'Hangzhou, Zhejiang',
+    },
+    {
+      key: '4',
+      label: 'Remark',
+      children: 'empty',
+    },
+    {
+      key: '5',
+      label: 'Address',
+      children: 'aaaa',
+    },
+  ];
   const getBase64 = (file) =>
     new Promise((resolve, reject) => {
       const reader = new FileReader();
@@ -29,7 +55,8 @@ export default function Predicate(){
   const handleChangeTwo = ({ fileList: newFileList }) => setFileListTwo(newFileList);
   const uploadButton = (
     <Button
-    type='primary'
+    color='cyan'
+    variant="solid"
     >
       <PlusOutlined />
         上传图像
@@ -78,10 +105,48 @@ export default function Predicate(){
             />
           )}
         </div>
-        <div className='image-result'></div>
+        <div className='image-result'>
+          <div className='image-result-step'>
+            <Steps
+              size='small'
+              current={1}
+              items={[
+                {
+                  title: '上传成功',
+                  status: 'finish',
+                  icon: <CloudTwoTone />,
+                },
+                {
+                  title: '模型加载中',
+                  status: 'process',
+                  icon: <LoadingOutlined />,
+                },
+                {
+                  title: '完成',
+                  status: 'finish',
+                  icon:  <CheckCircleTwoTone />,
+                },
+              ]}
+            />
+          </div>
+          <div className='image-result-content'>
+              <Descriptions 
+              
+              column={1}
+              items={items}
+              />
+          </div>
+        </div>
       </div>
       <div className='predicate-footer'>
-        <div className='function-select'></div>
+        <div className='function-select'>
+          <div className='function-select-button'>
+            <Button color='cyan'variant="solid">
+              <CloudUploadOutlined />开始智能诊断
+            </Button>
+          </div>
+          
+        </div>
         <div className='echart-dom'></div>
       </div>
     </div>

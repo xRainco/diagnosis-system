@@ -1,7 +1,7 @@
 
 import './index.less'
 import { useState } from 'react'
-import { PlusOutlined, CloudUploadOutlined, CloudTwoTone, LoadingOutlined, CheckCircleTwoTone, PlayCircleTwoTone,PictureTwoTone, AlertTwoTone } from '@ant-design/icons'
+import { PlusOutlined, CameraTwoTone, CloudTwoTone, LoadingOutlined, CheckCircleTwoTone, PlayCircleTwoTone,PictureTwoTone, PieChartTwoTone,CopyTwoTone,PhoneTwoTone } from '@ant-design/icons'
 import { Upload, Image, Button, Steps, Descriptions, Table } from "antd"
 
 
@@ -247,24 +247,24 @@ export default function Predicate(){
             </div>
             <div>
             <Button color='cyan'variant="outlined">
-              <AlertTwoTone />数据可视化表
+              <PieChartTwoTone />数据可视化表
               </Button>
             </div>
           </div>
           <div className='btn-right'>
             <div>
             <Button color='cyan'variant="outlined">
-                <CloudUploadOutlined />开始智能诊断
+                <CopyTwoTone />查看结果图片
               </Button>
             </div>
             <div>
             <Button color='cyan'variant="outlined">
-                <CloudUploadOutlined />开始智能诊断
+                <PhoneTwoTone />咨询在线医师
               </Button>
             </div>
             <div>
             <Button color='cyan'variant="outlined" >
-                <CloudUploadOutlined />开始智能诊断
+                <CameraTwoTone />录制眼部视频
               </Button>
             </div>
           </div>

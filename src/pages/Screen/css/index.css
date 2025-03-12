@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.screen-container {
+  width: 100%;
+}
+.header {
+  height: 1.25rem;
+  line-height: 1.25rem;
+  font-size: larger;
+  color: #91caef;
+  padding-left: 0.25rem;
+}
+.charts {
+  min-width: 1024px;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0.125rem 0.125rem 0;
+  display: flex;
+}
+.screen-left,
+.screen-center {
+  flex: 3;
+}
+.screen-right {
+  flex: 5;
+}
+.panel {
+  height: 3.875rem;
+  border: 0.0125rem solid black;
+  border-radius: 0.3125rem;
+  padding: 0 0.1875rem 0.5rem;
+  margin-bottom: 0.1875rem;
+}
+.panel h2 {
+  height: 0.6rem;
+  color: #2d9feb;
+  font-size: 0.25rem;
+  line-height: 0.6rem;
+  text-align: center;
+  font-weight: 600;
+}
+.panel .chart {
+  height: 3rem;
+  background-color: skyblue;
+}

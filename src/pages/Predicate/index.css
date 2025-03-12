@@ -14,7 +14,6 @@
 .title{
   width: 95%;
   height: 80%;
-  color: #63b4b7;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -35,6 +34,8 @@
   justify-content: center;
   align-items: center;
 }
+
+
 .image-upload-container{
   width: 60%;
   height: 90%;
@@ -49,7 +50,7 @@
   align-items: center;
 }
 .image-upload{
-  margin-left: 10px;
+  margin-left: 20px;
 }
 .image-upload .ant-upload-list-item-container{
   width: 300px !important;
@@ -66,18 +67,6 @@
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
   border-radius: 10px;
 }
-.image-result-step{
-  width: 400px;
-  height: 50px;
-  margin: 30px auto;
-  margin-bottom: 10px;
-}
-.image-result-content{
-  width: 200px;
-  height: 200px;
-  /* border: 1px solid red; */
-  margin: 20px auto;
-}
 .predicate-footer{
   width: 100%;
   height: 280px;
@@ -86,7 +75,7 @@
   justify-content: center;
   align-items: center;
 }
-.result-table-container{
+.function-select{
   width: 60%;
   height: 100%;
   background-color: #ffffff;
@@ -94,39 +83,10 @@
   border-radius: 10px;
   margin-right: 10px;
 }
-
-.result-table-title{
-  margin: 10px 20px;
-  color: #63b4b7;
-}
-.result-table{
-  width: 740px;
-  height: 200px;
-  margin: 10px auto;
-}
-.result-table th.predicate-table-th{
-  color: #63b4b7 !important;
-  background: #ffffff !important;
-}
-.functon-btn{
+.echart-dom{
   width: 35%;
   height: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap:10px;
   background-color: #ffffff;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
   border-radius: 10px;
-}
-.btn-left{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.btn-right{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
 }

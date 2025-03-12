@@ -10,7 +10,7 @@
   height: 1.25rem;
   line-height: 1.25rem;
   font-size: larger;
-  color: #91caef;
+  color: #438797;
   padding-left: 0.25rem;
 }
 .charts {
@@ -20,11 +20,11 @@
   padding: 0.125rem 0.125rem 0;
   display: flex;
 }
-.screen-left,
-.screen-center {
+.charts-left,
+.charts-center {
   flex: 3;
 }
-.screen-right {
+.charts-right {
   flex: 5;
 }
 .panel {
@@ -36,7 +36,7 @@
 }
 .panel h2 {
   height: 0.6rem;
-  color: #2d9feb;
+  color: #438797;
   font-size: 0.25rem;
   line-height: 0.6rem;
   text-align: center;
@@ -44,5 +44,5 @@
 }
 .panel .chart {
   height: 3rem;
-  background-color: skyblue;
+  width: 100%;
 }
